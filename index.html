@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sachin Vashist - Engineering Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body contenteditable="true">
+    <div class="resume-container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header-content">
+                <div class="header-text">
+                    <h1 id="name"></h1>
+                    <h2 id="title"></h2>
+                    <p class="summary" id="summary"></p>
+                </div>
+            </div>
+            <div class="contact-bar" id="contact-bar"></div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Professional Experience -->
+            <section class="section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>PROFESSIONAL EXPERIENCE</h3>
+                </div>
+                <div id="experience-container"></div>
+            </section>
+            <!-- Core Competencies -->
+            <section class="section competencies-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>CORE COMPETENCIES</h3>
+                </div>
+                <div id="competencies-container"></div>
+            </section>
+
+            <!-- Leadership Highlights -->
+            <section class="section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>LEADERSHIP HIGHLIGHTS</h3>
+                </div>
+                <ul class="leadership-list" id="leadership-container"></ul>
+            </section>
+
+            <!-- Education -->
+            <section class="section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>EDUCATION</h3>
+                </div>
+                <div class="education-row" id="education-container"></div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Load and render resume data
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                renderResume(data);
+            })
+            .catch(error => console.error('Error loading data:', error));
+
+        function renderResume(data) {
+            // Personal Info
+            document.getElementById('name').textContent = data.personal.name;
+            document.getElementById('title').textContent = data.personal.title;
+            document.getElementById('summary').textContent = data.personal.summary;
+
+            // Contact Bar
+            const contactBar = document.getElementById('contact-bar');
+            const contactIcons = {
+                email: 'fas fa-envelope',
+                phone: 'fas fa-phone',
+                location: 'fas fa-map-marker-alt',
+                linkedin: 'fab fa-linkedin'
+            };
+            Object.entries(data.personal.contact).forEach(([key, value]) => {
+                const item = document.createElement('div');
+                item.className = 'contact-item';
+                item.innerHTML = `<i class="${contactIcons[key]}"></i><span>${value}</span>`;
+                contactBar.appendChild(item);
+            });
+
+            // Core Competencies
+            const competenciesContainer = document.getElementById('competencies-container');
+            data.coreCompetencies.forEach(comp => {
+                const group = document.createElement('div');
+                group.className = 'competency-group';
+                group.innerHTML = `
+                    <h4 class="competency-title">${comp.title}</h4>
+                    <p class="competency-inline">${comp.skills}</p>
+                `;
+                competenciesContainer.appendChild(group);
+            });
+
+            // Leadership Highlights
+            const leadershipContainer = document.getElementById('leadership-container');
+            data.leadershipHighlights.forEach(highlight => {
+                const li = document.createElement('li');
+                li.innerHTML = `<strong>${highlight.label}:</strong> ${highlight.description}`;
+                leadershipContainer.appendChild(li);
+            });
+
+            // Professional Experience
+            const experienceContainer = document.getElementById('experience-container');
+            data.experience.forEach(exp => {
+                const item = document.createElement('div');
+                item.className = 'experience-item';
+
+                let html = `
+                    <h4>${exp.title}</h4>
+                    <p class="company-date"><span class="company">${exp.company}</span><span class="date">${exp.date}</span></p>
+                `;
+
+                if (exp.summary) {
+                    html += `<p class="role-summary">${exp.summary}</p>`;
+                    html += `<p class="key-achievements">Key Achievements</p>`;
+                }
+
+                html += '<ul>';
+                exp.achievements.forEach(achievement => {
+                    html += `<li>${achievement}</li>`;
+                });
+                html += '</ul>';
+
+                item.innerHTML = html;
+                experienceContainer.appendChild(item);
+            });
+
+            // Education
+            const educationContainer = document.getElementById('education-container');
+            data.education.forEach(edu => {
+                const item = document.createElement('div');
+                item.className = 'education-item';
+                item.innerHTML = `
+                    <h4>${edu.degree}</h4>
+                    <p class="school">${edu.school}</p>
+                    <p class="edu-date">${edu.date}</p>
+                    <p class="edu-location">${edu.location}</p>
+                `;
+                educationContainer.appendChild(item);
+            });
+        }
+    </script>
+</body>
+
+</html>
