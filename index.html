@@ -11,6 +11,29 @@
 </head>
 
 <body contenteditable="true">
+    <!-- Info Panel - Hidden from Print -->
+    <div class="info-panel">
+        <div class="info-header">
+            <span>📝 Resume Editor</span>
+            <button class="close-btn" onclick="this.parentElement.parentElement.style.display='none'">×</button>
+        </div>
+        <div class="info-content">
+            <p><strong>How to Edit:</strong></p>
+            <ul>
+                <li>Click anywhere on the resume to edit text directly</li>
+                <li>Press <kbd>Enter</kbd> to add new lines</li>
+                <li>For permanent changes, edit <code>data.json</code></li>
+            </ul>
+            <p><strong>How to Print as PDF:</strong></p>
+            <ul>
+                <li>Press <kbd>Ctrl</kbd> + <kbd>P</kbd> (or <kbd>Cmd</kbd> + <kbd>P</kbd> on Mac)</li>
+                <li>Set Destination to "Save as PDF"</li>
+                <li>Set Margins to "None"</li>
+                <li>Enable "Background graphics"</li>
+                <li>This panel will be hidden in print</li>
+            </ul>
+        </div>
+    </div>
     <div class="resume-container">
         <!-- Header Section -->
         <header class="header">
