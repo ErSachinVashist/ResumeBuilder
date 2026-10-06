@@ -1,0 +1,128 @@
+{
+  "personal": {
+    "name": "Sachin Vashist",
+    "title": "Engineering Manager | AI Transformation | Platform Engineering | Agentic AI | Developer Productivity",
+    "summary": "Engineering Manager with 9+ years of experience leading globally distributed engineering teams and delivering enterprise-scale software platforms across AI, cloud, and modern full-stack technologies. Passionate about building high-performing engineering organizations through technical leadership, intelligent automation, and a culture of ownership. Currently driving AI-first engineering transformation by implementing Agentic AI, AI-powered SDLC, developer productivity platforms, enterprise knowledge graphs, and intelligent observability solutions to accelerate delivery, improve engineering quality, and deliver measurable business impact.",
+    "contact": {
+      "email": "sachinvashist82@gmail.com",
+      "phone": "+918860496464",
+      "location": "Gurugram, IN",
+      "linkedin": "linkedin.com/in/sachin-vashist"
+    }
+  },
+  "coreCompetencies": [
+    {
+      "title": "AI Engineering & Transformation",
+      "skills": "Agentic AI • Generative AI • AI-powered SDLC • AI Agents • AI Governance & Guardrails • Amazon Bedrock • AWS AgentCore • Model Context Protocol (MCP) • LLM Applications • AI Workflow Automation • Developer Productivity • Engineering Intelligence"
+    },
+    {
+      "title": "Platform & Full-Stack Engineering",
+      "skills": "Platform Engineering • Cloud-Native Architecture • Microservices • Distributed Systems • Monorepo Architecture • React • Next.js • Node.js • NestJS • TypeScript • REST APIs • MongoDB • MySQL • SPFx"
+    },
+    {
+      "title": "Cloud, DevOps & Observability",
+      "skills": "AWS • Docker • Kubernetes • Azure DevOps • Jenkins • GitHub Actions • CI/CD • CloudWatch • Observability • DevSecOps"
+    },
+    {
+      "title": "Data, Analytics & Automation",
+      "skills": "Knowledge Graphs • Data Engineering • ETL Pipelines • Engineering KPIs • DORA Metrics • Executive Dashboards • Workflow Automation • Telemetry Analytics"
+    }
+  ],
+  "leadershipHighlights": [
+    {
+      "label": "Global Engineering Leadership",
+      "description": "Led globally distributed engineering teams across APAC, EMEA, and North America, delivering enterprise-scale products while fostering a culture of ownership and collaboration."
+    },
+    {
+      "label": "High-Performance Teams",
+      "description": "Built autonomous, high-performing engineering teams through coaching, mentorship, AI adoption, and continuous capability development."
+    },
+    {
+      "label": "Executive Partnership",
+      "description": "Collaborated with executive leadership, Principal Engineers, Product Managers, and Architects to shape technology strategy, roadmap priorities, and engineering execution."
+    },
+    {
+      "label": "Engineering Transformation",
+      "description": "Led AI-driven modernization initiatives across SDLC, developer productivity, platform engineering, and cloud-native architecture."
+    },
+    {
+      "label": "People Development",
+      "description": "Mentored engineers into senior technical and leadership roles through structured career growth, upskilling, and continuous feedback."
+    }
+  ],
+  "experience": [
+    {
+      "title": "Engineering Manager",
+      "company": "Wood Mackenzie",
+      "date": "March 2024 – Present | Gurugram, India",
+      "summary": "Lead two globally distributed engineering teams delivering enterprise-scale energy intelligence platforms while partnering with Product Managers, Principal Engineers, and Scrum Masters to align engineering strategy with business objectives.",
+      "achievements": [
+        "Led the adoption of AI across the engineering lifecycle by introducing an AI-powered SDLC, intelligent automation, and developer tools, accelerating software delivery by 3× while improving engineering quality and developer productivity.",
+        "Built internal engineering platforms including an Enterprise Knowledge Graph, engineering intelligence dashboards, AI observability, and developer productivity tools, enabling contextual engineering insights, faster onboarding, data-driven decision making, and reducing MTTR by 70%.",
+        "Established a centralized engineering data foundation by integrating Jira, GitHub, Jenkins, Confluence, CI/CD pipelines, and operational data through scalable ETL processes, enabling AI-driven insights, contextual search, and intelligent engineering assistance.",
+        "Automated over 90% of engineering management activities, including planning, reporting, KPI tracking, onboarding, capacity management, and operational workflows, enabling autonomous teams and allowing greater focus on strategic innovation.",
+        "Mentored engineers, established engineering standards, led architecture and technical design discussions, and partnered with Product Managers, Principal Engineers, Architects, and Scrum Masters to deliver scalable cloud-native solutions aligned with business objectives."
+      ]
+    },
+    {
+      "title": "Software Engineering Associate Manager",
+      "company": "Accenture",
+      "date": "Nov 2021 – Mar 2024 | Gurugram, India",
+      "summary": "Led engineering delivery for Vodafone UK's digital platforms, managing cross-functional teams and driving modernization initiatives across consumer, business, and enterprise customer journeys.",
+      "achievements": [
+        "Led a 16-member cross-functional engineering team delivering large-scale telecom solutions while driving technical direction, Agile delivery, and engineering excellence.",
+        "Delivered scalable customer-facing applications using React, TypeScript, Vite, and Node.js while modernizing architecture and improving code quality.",
+        "Improved software quality and release efficiency by expanding test automation with Cypress and Cucumber and strengthening CI/CD pipelines on AWS and Azure DevOps.",
+        "Built structured onboarding, mentoring, and upskilling programs for engineers while contributing to solution proposals and RFPs for strategic client engagements.",
+        "Collaborated with global engineering and product leadership during PI Planning and onsite workshops across Europe, aligning architecture, delivery priorities, and quarterly roadmaps."
+      ]
+    },
+    {
+      "title": "Assistant Manager – SPFX Development",
+      "company": "Genpact",
+      "date": "Dec 2019 – Nov 2021 | Bengaluru, India",
+      "summary": "Led SharePoint and modern web application development while driving engineering best practices, solution architecture, and client delivery across multiple enterprise engagements.",
+      "achievements": [
+        "Designed and delivered enterprise SharePoint (SPFx) and React-based business applications for global clients.",
+        "Standardized engineering practices, reusable components, and development standards to improve delivery consistency and maintainability.",
+        "Worked closely with clients to translate business requirements into scalable technical solutions while leading Agile delivery.",
+        "Mentored engineering teams, conducted technical training programs, and received multiple organizational awards including Rising Star and Operational Excellence."
+      ]
+    },
+    {
+      "title": "Full Stack DevOps Engineer",
+      "company": "ServerGuy",
+      "date": "Dec 2016 – Dec 2019 | Delhi, India",
+      "summary": "Played a key role in building cloud-native SaaS products, DevOps automation platforms, and enterprise management solutions while owning the complete product lifecycle from architecture through deployment.",
+      "achievements": [
+        "Led end-to-end design and development of multiple commercial SaaS platforms spanning infrastructure management, performance monitoring, security automation, and managed hosting.",
+        "Architected cloud-native solutions using React, Node.js, Docker, Kubernetes, AWS, and CI/CD pipelines to improve scalability and operational efficiency.",
+        "Developed enterprise platforms for infrastructure automation, customer lifecycle management, vulnerability analysis, and operational monitoring.",
+        "Established a strong foundation in full-stack architecture, DevOps, cloud engineering, and product development that accelerated progression into engineering leadership."
+      ]
+    },
+    {
+      "title": "MEAN Stack Developer",
+      "company": "QSS Technosoft",
+      "date": "Oct 2016 – Dec 2016",
+      "summary": null,
+      "achievements": [
+        "Developed enterprise web applications using the MEAN stack while strengthening expertise in full-stack application development."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Tech (CSE) - 70%",
+      "school": "PDM College of Engineering",
+      "date": "04/2012 - 04/2016",
+      "location": "Bahadurgarh, Haryana"
+    },
+    {
+      "degree": "High School (Science) - 80%",
+      "school": "Gitarattan Jindal Public School",
+      "date": "04/2011 - 04/2012",
+      "location": "Rohini Sec-7, New Delhi"
+    }
+  ]
+}
