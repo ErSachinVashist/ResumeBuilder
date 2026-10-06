@@ -10,9 +10,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body contenteditable="true">
-    <!-- Info Panel - Hidden from Print -->
-    <div class="info-panel">
+<body>
+    <!-- Edit Toggle Button - Fixed, always visible, hidden from print -->
+    <div class="edit-toggle-fixed" id="edit-toggle-fixed">
+        <label>
+            <input type="checkbox" id="edit-checkbox"> Edit Mode
+        </label>
+    </div>
+
+    <!-- Info Panel - Hidden from Print, shown only in edit mode -->
+    <div class="info-panel" id="info-panel" style="display: none;">
         <div class="info-header">
             <span>📝 Resume Editor</span>
             <button class="close-btn" onclick="this.parentElement.parentElement.style.display='none'">×</button>
@@ -34,6 +41,39 @@
             </ul>
         </div>
     </div>
+
+    <script>
+        // Check for edit mode via URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const isEditMode = urlParams.get('edit') === 'true';
+        const checkbox = document.getElementById('edit-checkbox');
+
+        // Set initial state based on URL
+        if (isEditMode) {
+            checkbox.checked = true;
+            document.body.setAttribute('contenteditable', 'true');
+            document.getElementById('info-panel').style.display = 'block';
+        }
+
+        // Toggle edit mode with checkbox - updates URL
+        checkbox.addEventListener('change', function () {
+            if (this.checked) {
+                // Add edit=true to URL
+                const url = new URL(window.location);
+                url.searchParams.set('edit', 'true');
+                window.history.pushState({}, '', url);
+                document.body.setAttribute('contenteditable', 'true');
+                document.getElementById('info-panel').style.display = 'block';
+            } else {
+                // Remove edit param from URL
+                const url = new URL(window.location);
+                url.searchParams.delete('edit');
+                window.history.pushState({}, '', url);
+                document.body.removeAttribute('contenteditable');
+                document.getElementById('info-panel').style.display = 'none';
+            }
+        });
+    </script>
     <div class="resume-container">
         <!-- Header Section -->
         <header class="header">
