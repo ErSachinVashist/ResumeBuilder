@@ -17,7 +17,7 @@
     },
     {
       "title": "Platform & Full-Stack Engineering",
-      "skills": "Platform Engineering • Cloud-Native Architecture • Microservices • Distributed Systems • Monorepo Architecture • React • Next.js • Node.js • NestJS • TypeScript • REST APIs • MongoDB • MySQL • SPFx"
+      "skills": "Platform Engineering • Cloud-Native Architecture • Microservices • Distributed Systems • Monorepo Architecture • Python • React • Next.js • Node.js • NestJS • TypeScript • REST APIs • GraphQL • MongoDB • MySQL • SPFx • Performance & Automation Testing"
     },
     {
       "title": "Cloud, DevOps & Observability",
@@ -25,7 +25,7 @@
     },
     {
       "title": "Data, Analytics & Automation",
-      "skills": "Knowledge Graphs • Data Engineering • ETL Pipelines • Engineering KPIs • DORA Metrics • Executive Dashboards • Workflow Automation • Telemetry Analytics"
+      "skills": "Knowledge Graphs • Data Engineering • ETL Pipelines • Engineering KPIs • DORA Metrics • Executive Dashboards • Workflow Automation • Telemetry Analytics • Power Automate • Jira Agents & Automation"
     }
   ],
   "leadershipHighlights": [
